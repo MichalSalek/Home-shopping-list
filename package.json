@@ -24,9 +24,8 @@
   },
   "lint-staged": {
     "src/**/*.{ts,tsx}": [
-      "eslint  — fix src/",
-      "pretty-quick — staged",
       "prettier --write src/",
+      "eslint  — fix src/",
       "git add"
     ]
   },
