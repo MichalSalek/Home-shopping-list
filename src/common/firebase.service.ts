@@ -1,3 +1,3 @@
-import initializationDB from "./firebase.init";
+import initializationDB from './firebase.init';
 
 const db = initializationDB();

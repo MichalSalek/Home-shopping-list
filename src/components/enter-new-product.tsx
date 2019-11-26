@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import * as React from 'react';
 
 import { OwnInput } from '../atoms/own-input';
 import { OwnButton } from '../atoms/own-button';
@@ -6,7 +6,7 @@ import { OwnButton } from '../atoms/own-button';
 import { Container } from '@material-ui/core';
 
 export const EnterNewProduct = () => {
-  const [newProduct, setNewProduct] = useState('');
+  const [newProduct, setNewProduct] = React.useState('');
 
   const addNewProduct = (): void => {
     const value = newProduct;
