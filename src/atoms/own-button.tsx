@@ -9,7 +9,11 @@ interface Props {
   loading: boolean;
 }
 
-export const OwnButton = ({ clicker, textContent, loading }: Props) => {
+export const OwnButton = ({
+  clicker,
+  textContent,
+  loading,
+}: Props) => {
   return (
     <div className="own-button">
       <Button
@@ -26,7 +30,9 @@ export const OwnButton = ({ clicker, textContent, loading }: Props) => {
       >
         {textContent}
       </Button>
-      {loading && <CircularProgress size={24} className="own-button__loader" />}
+      {loading && (
+        <CircularProgress size={24} className="own-button__loader" />
+      )}
     </div>
   );
 };

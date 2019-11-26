@@ -15,7 +15,9 @@ export const OwnInput = ({ id, label, setter, value }: Props) => {
       id={id}
       label={label}
       variant="outlined"
-      onChange={e => e.currentTarget.value && setter(e.currentTarget.value)}
+      onChange={e =>
+        e.currentTarget.value && setter(e.currentTarget.value)
+      }
       value={value}
     />
   );
