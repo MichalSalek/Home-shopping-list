@@ -25,6 +25,7 @@
   "lint-staged": {
     "src/**/*.{ts,tsx}": [
       "prettier --write src/",
+      "eslint  — fix src/",
       "git add"
     ]
   },
